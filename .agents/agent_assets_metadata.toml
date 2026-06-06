@@ -1,0 +1,20 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "6qabgRvSuBx36kfcvcYbH"
+uri = "file://artifacts/portfolio/public/images/shatranj.png"
+type = "image"
+title = "Shatranj chess web platform"
+
+[[generated]]
+id = "ahw9hhRKAWz-6m7qTXLJB"
+uri = "file://artifacts/portfolio/public/images/openminded.png"
+type = "image"
+title = "OpenMinded AI dashboard"
+
+[[generated]]
+id = "yZBlpWzROm80cfabJ2CfE"
+uri = "file://artifacts/portfolio/public/images/beyond.png"
+type = "image"
+title = "Beyond creative platform"

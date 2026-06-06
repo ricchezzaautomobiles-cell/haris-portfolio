@@ -1,0 +1,260 @@
+You are an elite senior product designer, UI/UX designer, and full-stack engineer.
+
+Create a world-class personal portfolio website for a developer named Haris.
+
+The goal is to impress potential freelance clients, startup founders, and employers within the first 10 seconds.
+
+## Developer Profile
+
+Name: Haris
+
+Title:
+Full-Stack Web Application Developer
+
+Tagline:
+Building Modern Websites, AI-Powered Applications & Real-Time Platforms
+
+Description:
+I am a developer focused on creating modern digital experiences, AI-powered applications, SaaS platforms, and real-time multiplayer systems. I combine beautiful design, strong engineering, and user-centered experiences to build products that people love to use.
+
+## Featured Projects
+
+### Shatranj
+A full-scale real-time multiplayer chess platform.
+
+Features:
+- Real-time online multiplayer
+- Matchmaking system
+- ELO rating system
+- AI Coach
+- Interactive lessons
+- Tactical puzzles
+- Opening Explorer
+- Game Analysis
+- Leaderboards
+- Profile System
+- Modern UI
+- Responsive Design
+
+Project Type:
+Large-scale Web Application
+
+Highlight:
+This should be the flagship project and receive the most visual emphasis.
+
+---
+
+### OpenMinded Intelligence
+
+Description:
+AI-focused platform featuring modern design, branding, responsive layouts, and engaging user experiences.
+
+Project Type:
+AI Startup Website
+
+---
+
+### Beyond
+
+Description:
+A premium content-focused platform designed around storytelling, modern aesthetics, and immersive user experience.
+
+Project Type:
+Creative Platform
+
+## Design Direction
+
+Create a premium design that feels more expensive and impressive than 95% of developer portfolios.
+
+Design inspiration:
+- Apple
+- Linear
+- Stripe
+- Vercel
+- Framer
+- Raycast
+
+Avoid:
+- Generic portfolio templates
+- Basic cards
+- Amateur layouts
+- Default Tailwind appearance
+
+## Theme
+
+Primary:
+Deep Black (#000000)
+
+Secondary:
+Rich Red (#E50914)
+
+Accent:
+Crimson Red
+
+Text:
+Pure White
+
+Effects:
+- Glassmorphism
+- Subtle gradients
+- Glow effects
+- Smooth motion
+- Micro interactions
+- Premium animations
+
+## Website Structure
+
+1. Hero Section
+
+Large animated headline:
+
+"Building Modern Websites & Real-Time Applications"
+
+Subheadline:
+Helping businesses and startups create exceptional digital products.
+
+Buttons:
+- View Projects
+- Hire Me
+
+Animated background.
+Particle effects.
+Premium motion.
+
+---
+
+2. Trust Section
+
+Statistics:
+
+- 3 Major Projects
+- Real-Time Multiplayer Systems
+- AI-Powered Applications
+- Modern Full-Stack Development
+
+---
+
+3. Featured Projects Section
+
+Large project showcases.
+
+Use screenshots.
+Use hover animations.
+Use case-study style layouts.
+
+Each project should include:
+- Overview
+- Features
+- Technologies
+- Live Demo Button
+- GitHub Button
+
+Shatranj must appear first.
+
+---
+
+4. Skills Section
+
+Display visually.
+
+Include:
+- React
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Firebase
+- Supabase
+- WebSockets
+- Real-Time Systems
+- AI Integration
+- UI/UX Design
+
+---
+
+5. About Section
+
+Professional biography.
+Clean layout.
+High-end presentation.
+
+---
+
+6. Services Section
+
+Offer:
+
+- Website Development
+- SaaS Development
+- AI Web Applications
+- Real-Time Applications
+- Dashboard Development
+- UI/UX Design
+
+---
+
+7. Case Studies Section
+
+Detailed breakdown of projects.
+
+For each project include:
+
+Challenge
+Solution
+Technology Stack
+Results
+
+---
+
+8. Contact Section
+
+Professional call to action.
+
+Headline:
+Let's Build Something Extraordinary
+
+Include:
+- Email
+- LinkedIn
+- GitHub
+- Fiverr
+- Upwork
+
+---
+
+## Technical Requirements
+
+- Next.js 15
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Responsive Design
+- Mobile First
+- SEO Optimized
+- Accessibility Optimized
+- Fast Loading
+- Production Ready
+
+## Animation Requirements
+
+Premium animations throughout.
+
+Include:
+- Smooth page transitions
+- Scroll reveal animations
+- Magnetic buttons
+- Hover interactions
+- Animated gradients
+- Floating effects
+- Motion-based storytelling
+
+Animations should feel like:
+Apple + Linear + Stripe + Framer
+
+## Final Goal
+
+When someone lands on this website, they should immediately think:
+
+"This developer builds serious products and could handle my project."
+
+Generate a complete production-ready website with clean architecture, reusable components, modern code practices, and a premium user experience.
