@@ -18,6 +18,14 @@ const STUDIES = [
     challenge: "AI interfaces often feel overly technical or too generic. The challenge was building an identity and dashboard that felt cutting-edge but remained highly usable for non-technical users.",
     solution: "Developed a cohesive design system centered around dark glassmorphism and subtle glowing accents. Built complex data visualizations that react dynamically to AI outputs using Framer Motion for fluid state transitions.",
     results: "Delivered a premium, cohesive brand experience that elevates the perceived value of the underlying AI models."
+  },
+  {
+    id: "beyond",
+    title: "Building a Decision Intelligence Platform",
+    project: "Beyond",
+    challenge: "People facing high-stakes life decisions — career pivots, financial moves, life strategy — are overwhelmed by noise, emotion, and cognitive bias. Existing tools either give generic advice or reduce decisions to pros/cons lists. The challenge was building a system that thinks like a world-class strategist.",
+    solution: "Architected an AI reasoning engine that applies first-principles deconstruction, bias detection, opportunity-cost analysis, and strategic depth scoring. Built a full SaaS product with auth, usage tiers, decision history, and an intelligence feed that meta-analyzes the user's decision patterns over time.",
+    results: "A full-featured AI SaaS platform with clarity scoring, strategic architecture reports, cognitive bias alerts, and long-term horizon analysis — delivered with a premium dark UI that feels unlike any generic AI tool."
   }
 ];
 

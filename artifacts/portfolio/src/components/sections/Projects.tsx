@@ -12,6 +12,42 @@ import shatranj5 from "@assets/Screenshot_(20)_1780789607632.png";
 import shatranj6 from "@assets/Screenshot_(21)_1780789607633.png";
 import shatranj7 from "@assets/Screenshot_(22)_1780789607639.png";
 
+import beyond1 from "@assets/Screenshot_(24)_1780789869651.png";
+import beyond2 from "@assets/Screenshot_(25)_1780789869651.png";
+import beyond3 from "@assets/Screenshot_(26)_1780789869652.png";
+import beyond4 from "@assets/Screenshot_(27)_1780789869671.png";
+import beyond5 from "@assets/Screenshot_(28)_1780789869672.png";
+import beyond6 from "@assets/Screenshot_(29)_1780789869672.png";
+import beyond7 from "@assets/Screenshot_(30)_1780789869672.png";
+import beyond8 from "@assets/Screenshot_(31)_1780789869673.png";
+import beyond9 from "@assets/Screenshot_(32)_1780789869673.png";
+import beyond10 from "@assets/Screenshot_(33)_1780789869673.png";
+import beyond11 from "@assets/Screenshot_(34)_1780789869674.png";
+import beyond12 from "@assets/Screenshot_(35)_1780789869674.png";
+import beyond13 from "@assets/Screenshot_(36)_1780789869674.png";
+import beyond14 from "@assets/Screenshot_(37)_1780789869675.png";
+import beyond15 from "@assets/Screenshot_(38)_1780789869675.png";
+import beyond16 from "@assets/Screenshot_(39)_1780789869675.png";
+
+const BEYOND_SCREENSHOTS = [
+  { src: beyond1, label: "Think Clearly — Landing" },
+  { src: beyond2, label: "Neural Engine Active" },
+  { src: beyond3, label: "Elite Reasoning as a Service" },
+  { src: beyond4, label: "Navigate High-Stakes Choices" },
+  { src: beyond5, label: "Ready to Evolve" },
+  { src: beyond6, label: "Dashboard — System Active" },
+  { src: beyond7, label: "New Decision — Structure Your Thought" },
+  { src: beyond8, label: "Analyze Decision Form" },
+  { src: beyond9, label: "Strategy Archive" },
+  { src: beyond10, label: "Strategic Architecture" },
+  { src: beyond11, label: "System Recommendation" },
+  { src: beyond12, label: "Long-Term Horizon & Bias Alert" },
+  { src: beyond13, label: "Intelligence Feed" },
+  { src: beyond14, label: "Systems Configuration — Profile" },
+  { src: beyond15, label: "Systems Configuration — Theme" },
+  { src: beyond16, label: "Welcome Back" },
+];
+
 const SHATRANJ_SCREENSHOTS = [
   { src: shatranj1, label: "Pairing Arena" },
   { src: shatranj2, label: "AI Chess Engine" },
@@ -22,17 +58,17 @@ const SHATRANJ_SCREENSHOTS = [
   { src: shatranj7, label: "Global Leaderboards" },
 ];
 
-function ShatranjCarousel() {
+function ProjectCarousel({ screenshots, projectId }: { screenshots: { src: string; label: string }[]; projectId: string }) {
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(1);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setDirection(1);
-      setCurrent((prev) => (prev + 1) % SHATRANJ_SCREENSHOTS.length);
+      setCurrent((prev) => (prev + 1) % screenshots.length);
     }, 3500);
     return () => clearInterval(timer);
-  }, []);
+  }, [screenshots.length]);
 
   const goTo = (idx: number) => {
     setDirection(idx > current ? 1 : -1);
@@ -41,12 +77,12 @@ function ShatranjCarousel() {
 
   const prev = () => {
     setDirection(-1);
-    setCurrent((prev) => (prev - 1 + SHATRANJ_SCREENSHOTS.length) % SHATRANJ_SCREENSHOTS.length);
+    setCurrent((prev) => (prev - 1 + screenshots.length) % screenshots.length);
   };
 
   const next = () => {
     setDirection(1);
-    setCurrent((prev) => (prev + 1) % SHATRANJ_SCREENSHOTS.length);
+    setCurrent((prev) => (prev + 1) % screenshots.length);
   };
 
   return (
@@ -54,8 +90,8 @@ function ShatranjCarousel() {
       <AnimatePresence initial={false} custom={direction} mode="popLayout">
         <motion.img
           key={current}
-          src={SHATRANJ_SCREENSHOTS[current].src}
-          alt={SHATRANJ_SCREENSHOTS[current].label}
+          src={screenshots[current].src}
+          alt={screenshots[current].label}
           custom={direction}
           variants={{
             enter: (d: number) => ({ x: d > 0 ? "100%" : "-100%", opacity: 0 }),
@@ -66,15 +102,15 @@ function ShatranjCarousel() {
           animate="center"
           exit="exit"
           transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="absolute inset-0 w-full h-full object-cover"
-          data-testid={`img-shatranj-${current}`}
+          className="absolute inset-0 w-full h-full object-cover object-top"
+          data-testid={`img-${projectId}-${current}`}
         />
       </AnimatePresence>
 
       {/* Label */}
       <div className="absolute bottom-0 left-0 right-0 z-10 bg-gradient-to-t from-black/80 via-black/40 to-transparent px-5 pb-4 pt-10">
         <span className="text-sm font-mono text-white/70 tracking-wider uppercase">
-          {SHATRANJ_SCREENSHOTS[current].label}
+          {screenshots[current].label}
         </span>
       </div>
 
@@ -82,25 +118,25 @@ function ShatranjCarousel() {
       <button
         onClick={prev}
         className="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-8 h-8 rounded-full bg-black/60 border border-white/10 flex items-center justify-center text-white/70 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200 opacity-0 group-hover:opacity-100"
-        data-testid="button-shatranj-prev"
+        data-testid={`button-${projectId}-prev`}
       >
         <ChevronLeft className="w-4 h-4" />
       </button>
       <button
         onClick={next}
         className="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-8 h-8 rounded-full bg-black/60 border border-white/10 flex items-center justify-center text-white/70 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200 opacity-0 group-hover:opacity-100"
-        data-testid="button-shatranj-next"
+        data-testid={`button-${projectId}-next`}
       >
         <ChevronRight className="w-4 h-4" />
       </button>
 
-      {/* Dot indicators */}
+      {/* Dot indicators — capped at 10 visible dots for dense sets */}
       <div className="absolute bottom-3 right-4 z-20 flex gap-1.5">
-        {SHATRANJ_SCREENSHOTS.map((_, idx) => (
+        {screenshots.map((_, idx) => (
           <button
             key={idx}
             onClick={() => goTo(idx)}
-            data-testid={`button-shatranj-dot-${idx}`}
+            data-testid={`button-${projectId}-dot-${idx}`}
             className={`rounded-full transition-all duration-300 ${
               idx === current
                 ? "w-4 h-1.5 bg-primary"
@@ -109,8 +145,14 @@ function ShatranjCarousel() {
           />
         ))}
       </div>
+    </div>
+  );
+}
 
-      {/* Flagship badge */}
+function ShatranjCarousel() {
+  return (
+    <div className="relative">
+      <ProjectCarousel screenshots={SHATRANJ_SCREENSHOTS} projectId="shatranj" />
       <div className="absolute top-4 left-4 z-20 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-[0_0_10px_rgba(229,9,20,0.5)]">
         Flagship Project
       </div>
@@ -155,16 +197,15 @@ const PROJECTS = [
   {
     id: "beyond",
     title: "Beyond",
-    type: "Creative Platform",
-    description: "A premium content-focused platform designed around storytelling, modern aesthetics, and immersive user experiences with large elegant typography.",
-    image: null,
+    type: "Decision Clarity AI",
+    description: "An AI-powered decision intelligence platform that deconstructs complexity and restores clarity. Uses structural logic and first-principles reasoning to help users navigate high-stakes choices with confidence.",
     features: [
-      "Immersive storytelling layout",
-      "Masonry media grids",
-      "Smooth scroll reveals",
-      "Premium typography system",
+      "AI-driven strategic analysis & recommendations",
+      "First-principles & bias detection reasoning",
+      "Decision archive with clarity scoring",
+      "Intelligence feed — meta-analysis of patterns",
     ],
-    tech: ["React", "Vite", "GSAP", "Styled Components"],
+    tech: ["Next.js", "TypeScript", "OpenAI", "Supabase", "Tailwind CSS", "Framer Motion"],
     flagship: false,
     liveUrl: "#",
     githubUrl: "#",
@@ -205,6 +246,8 @@ export function Projects() {
                 <div className="relative z-10">
                   {project.id === "shatranj" ? (
                     <ShatranjCarousel />
+                  ) : project.id === "beyond" ? (
+                    <ProjectCarousel screenshots={BEYOND_SCREENSHOTS} projectId="beyond" />
                   ) : (
                     <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 aspect-video flex items-center justify-center group-hover:border-white/20 transition-all duration-500 shadow-2xl">
                       <div className="text-white/20 text-lg font-mono tracking-wider">
