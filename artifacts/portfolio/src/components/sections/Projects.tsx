@@ -171,7 +171,7 @@ function ShatranjCarousel() {
   return (
     <div className="relative">
       <ProjectCarousel screenshots={SHATRANJ_SCREENSHOTS} projectId="shatranj" />
-      <div className="absolute top-4 left-4 z-20 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-[0_0_10px_rgba(147,51,234,0.5)]">
+      <div className="absolute top-4 left-4 z-20 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-[0_0_10px_rgba(16,185,129,0.5)]">
         Flagship Project
       </div>
     </div>
@@ -313,7 +313,7 @@ export function Projects() {
                 <div className="flex items-center gap-4 mt-auto">
                   <Button
                     asChild
-                    className="rounded-full shadow-[0_0_15px_rgba(147,51,234,0.3)] hover:shadow-[0_0_25px_rgba(147,51,234,0.5)] transition-all"
+                    className="rounded-full shadow-[0_0_15px_rgba(16,185,129,0.3)] hover:shadow-[0_0_25px_rgba(16,185,129,0.5)] transition-all"
                     data-testid={`button-visit-${project.id}`}
                   >
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">

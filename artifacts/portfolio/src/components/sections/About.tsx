@@ -17,7 +17,7 @@ export function About() {
             <div className="relative aspect-square max-w-md mx-auto lg:mx-0">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-transparent rounded-3xl transform -rotate-6"></div>
               <div className="absolute inset-0 bg-gradient-to-bl from-primary/10 to-transparent rounded-3xl transform rotate-3"></div>
-              <div className="absolute inset-0 rounded-3xl transform rotate-3 shadow-[0_0_60px_rgba(147,51,234,0.15)] border border-primary/20"></div>
+              <div className="absolute inset-0 rounded-3xl transform rotate-3 shadow-[0_0_60px_rgba(16,185,129,0.15)] border border-primary/20"></div>
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-white/10 aspect-square">
                 <img
                   src={harisPhoto}

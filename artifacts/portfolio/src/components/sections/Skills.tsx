@@ -52,7 +52,7 @@ export function Skills() {
                       whileInView={{ width: `${skill.level}%` }}
                       viewport={{ once: true }}
                       transition={{ duration: 1, delay: 0.2 + (i * 0.05), ease: "easeOut" }}
-                      style={{ boxShadow: "0 0 10px rgba(147,51,234,0.5)" }}
+                      style={{ boxShadow: "0 0 10px rgba(16,185,129,0.5)" }}
                     />
                   </div>
                 </motion.div>

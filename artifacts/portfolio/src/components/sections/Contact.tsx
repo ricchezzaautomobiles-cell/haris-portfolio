@@ -30,7 +30,7 @@ export function Contact() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16">
-            <Button size="lg" asChild className="h-16 px-10 rounded-full text-lg shadow-[0_0_20px_rgba(147,51,234,0.4)] hover:shadow-[0_0_40px_rgba(147,51,234,0.6)] hover:scale-105 transition-all w-full sm:w-auto">
+            <Button size="lg" asChild className="h-16 px-10 rounded-full text-lg shadow-[0_0_20px_rgba(16,185,129,0.4)] hover:shadow-[0_0_40px_rgba(16,185,129,0.6)] hover:scale-105 transition-all w-full sm:w-auto">
               <a href="mailto:sultanharis655@gmail.com?subject=Project%20Inquiry&body=Hi%20Haris%2C%20I%27d%20love%20to%20discuss%20a%20project%20with%20you.">
                 <Mail className="mr-3 w-5 h-5" /> Start a Conversation
               </a>
@@ -46,7 +46,7 @@ export function Contact() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-white hover:border-primary hover:scale-110 hover:shadow-[0_0_20px_rgba(147,51,234,0.5)] transition-all duration-300"
+                  className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-white hover:border-primary hover:scale-110 hover:shadow-[0_0_20px_rgba(16,185,129,0.5)] transition-all duration-300"
                   aria-label={social.name}
                 >
                   <Icon className="w-5 h-5" />
