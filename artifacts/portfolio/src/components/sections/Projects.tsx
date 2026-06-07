@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
+import { ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -28,6 +28,24 @@ import beyond13 from "@assets/Screenshot_(36)_1780789869674.png";
 import beyond14 from "@assets/Screenshot_(37)_1780789869675.png";
 import beyond15 from "@assets/Screenshot_(38)_1780789869675.png";
 import beyond16 from "@assets/Screenshot_(39)_1780789869675.png";
+
+import openminded1 from "@assets/Screenshot_(76)_1780831241851.png";
+import openminded2 from "@assets/Screenshot_(77)_1780831241852.png";
+import openminded3 from "@assets/Screenshot_(78)_1780831241853.png";
+import openminded4 from "@assets/Screenshot_(79)_1780831241853.png";
+import openminded5 from "@assets/Screenshot_(80)_1780831241854.png";
+import openminded6 from "@assets/Screenshot_(81)_1780831241854.png";
+import openminded7 from "@assets/Screenshot_(82)_1780831241855.png";
+
+const OPENMINDED_SCREENSHOTS = [
+  { src: openminded1, label: "Cognitive Intelligence — Landing" },
+  { src: openminded2, label: "Find Clarity in Complexity" },
+  { src: openminded3, label: "Cognitive Products Ecosystem" },
+  { src: openminded4, label: "The Ecosystem of Clarity" },
+  { src: openminded5, label: "About the Founder" },
+  { src: openminded6, label: "The Next Interface is Intelligence" },
+  { src: openminded7, label: "Build Beyond" },
+];
 
 const BEYOND_SCREENSHOTS = [
   { src: beyond1, label: "Think Clearly — Landing" },
@@ -174,25 +192,22 @@ const PROJECTS = [
     ],
     tech: ["React", "Node.js", "WebSockets", "Redis", "PostgreSQL", "Chess Engine"],
     flagship: true,
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://shatranj-gb.vercel.app",
   },
   {
     id: "openminded",
     title: "OpenMinded Intelligence",
     type: "AI Startup Website",
-    description: "AI-focused platform featuring modern design, branding, responsive layouts, and engaging user experiences tailored for the next generation of AI tools.",
-    image: null,
+    description: "An AI intelligence platform building cognitive tools for clarity and human thinking. Features a full product ecosystem — Beyond, Neural Memory, Cognitive OS — engineered around zero-friction interactivity and premium dark aesthetics.",
     features: [
-      "Futuristic UI/UX design",
-      "Intricate data visualizations",
-      "Responsive glassmorphic layouts",
-      "Performance optimized",
+      "Cognitive product ecosystem (Beyond, OMI Research, Neural Memory)",
+      "Interactive intelligence layer & strategic analysis demo",
+      "Premium dark UI with cinematic motion design",
+      "Founded & built by Haris at 19",
     ],
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     flagship: false,
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://openminded-intelligence.vercel.app",
   },
   {
     id: "beyond",
@@ -207,8 +222,7 @@ const PROJECTS = [
     ],
     tech: ["Next.js", "TypeScript", "OpenAI", "Supabase", "Tailwind CSS", "Framer Motion"],
     flagship: false,
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://beyond.openminded.vercel.app",
   },
 ];
 
@@ -248,6 +262,8 @@ export function Projects() {
                     <ShatranjCarousel />
                   ) : project.id === "beyond" ? (
                     <ProjectCarousel screenshots={BEYOND_SCREENSHOTS} projectId="beyond" />
+                  ) : project.id === "openminded" ? (
+                    <ProjectCarousel screenshots={OPENMINDED_SCREENSHOTS} projectId="openminded" />
                   ) : (
                     <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 aspect-video flex items-center justify-center group-hover:border-white/20 transition-all duration-500 shadow-2xl">
                       <div className="text-white/20 text-lg font-mono tracking-wider">
@@ -298,20 +314,10 @@ export function Projects() {
                   <Button
                     asChild
                     className="rounded-full shadow-[0_0_15px_rgba(229,9,20,0.3)] hover:shadow-[0_0_25px_rgba(229,9,20,0.5)] transition-all"
-                    data-testid={`button-live-${project.id}`}
+                    data-testid={`button-visit-${project.id}`}
                   >
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 w-4 h-4" /> Live Demo
-                    </a>
-                  </Button>
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="rounded-full border-white/20 hover:bg-white/10 transition-all"
-                    data-testid={`button-github-${project.id}`}
-                  >
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                      <Github className="mr-2 w-4 h-4" /> GitHub
+                      <ExternalLink className="mr-2 w-4 h-4" /> Visit Site
                     </a>
                   </Button>
                 </div>
