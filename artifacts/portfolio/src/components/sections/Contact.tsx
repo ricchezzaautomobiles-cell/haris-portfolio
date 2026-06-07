@@ -30,8 +30,10 @@ export function Contact() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16">
-            <Button size="lg" className="h-16 px-10 rounded-full text-lg shadow-[0_0_20px_rgba(229,9,20,0.4)] hover:shadow-[0_0_40px_rgba(229,9,20,0.6)] hover:scale-105 transition-all w-full sm:w-auto">
-              <Mail className="mr-3 w-5 h-5" /> Start a Conversation
+            <Button size="lg" asChild className="h-16 px-10 rounded-full text-lg shadow-[0_0_20px_rgba(229,9,20,0.4)] hover:shadow-[0_0_40px_rgba(229,9,20,0.6)] hover:scale-105 transition-all w-full sm:w-auto">
+              <a href="mailto:sultanharis655@gmail.com?subject=Project%20Inquiry&body=Hi%20Haris%2C%20I%27d%20love%20to%20discuss%20a%20project%20with%20you.">
+                <Mail className="mr-3 w-5 h-5" /> Start a Conversation
+              </a>
             </Button>
           </div>
 
