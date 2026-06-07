@@ -1,19 +1,17 @@
 import { motion } from "framer-motion";
 import { Mail, Linkedin } from "lucide-react";
-import { SiGithub, SiFiverr, SiUpwork } from "react-icons/si";
+import { SiFiverr, SiUpwork } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 
 const SOCIALS = [
-  { icon: SiGithub, name: "GitHub", href: "#" },
-  { icon: Linkedin, name: "LinkedIn", href: "#" },
-  { icon: SiFiverr, name: "Fiverr", href: "#" },
-  { icon: SiUpwork, name: "Upwork", href: "#" }
+  { icon: Linkedin, name: "LinkedIn", href: "https://www.linkedin.com/in/mohammad-haris-1a48b1412" },
+  { icon: SiFiverr, name: "Fiverr", href: "https://www.fiverr.com/s/0bpEZLr" },
+  { icon: SiUpwork, name: "Upwork", href: "https://www.upwork.com/freelancers/~01c3f62a28d5805924" },
 ];
 
 export function Contact() {
   return (
     <section className="py-32 relative overflow-hidden" id="contact">
-      {/* Decorative Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[150px] pointer-events-none"></div>
 
       <div className="container mx-auto px-6 max-w-4xl relative z-10 text-center">
