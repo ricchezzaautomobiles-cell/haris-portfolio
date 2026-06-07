@@ -49,7 +49,7 @@ export function Navbar() {
               {link.name}
             </a>
           ))}
-          <Button asChild className="rounded-full px-6 font-medium shadow-[0_0_15px_rgba(229,9,20,0.3)] hover:shadow-[0_0_25px_rgba(229,9,20,0.5)] transition-all">
+          <Button asChild className="rounded-full px-6 font-medium shadow-[0_0_15px_rgba(147,51,234,0.3)] hover:shadow-[0_0_25px_rgba(147,51,234,0.5)] transition-all">
             <a href="#contact">Let's Talk</a>
           </Button>
         </nav>

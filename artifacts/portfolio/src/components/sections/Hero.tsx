@@ -36,7 +36,7 @@ export function Hero() {
               Websites &
             </span>
             <br />
-            <span className="text-primary drop-shadow-[0_0_15px_rgba(229,9,20,0.5)]">
+            <span className="text-primary drop-shadow-[0_0_15px_rgba(147,51,234,0.5)]">
               Real-Time
             </span>{" "}
             Applications
@@ -57,7 +57,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
           >
-            <Button asChild size="lg" className="w-full sm:w-auto text-base h-14 px-8 rounded-full shadow-[0_0_20px_rgba(229,9,20,0.4)] hover:shadow-[0_0_30px_rgba(229,9,20,0.6)] transition-all">
+            <Button asChild size="lg" className="w-full sm:w-auto text-base h-14 px-8 rounded-full shadow-[0_0_20px_rgba(147,51,234,0.4)] hover:shadow-[0_0_30px_rgba(147,51,234,0.6)] transition-all">
               <a href="#projects">
                 View Projects <ArrowRight className="ml-2 w-5 h-5" />
               </a>
